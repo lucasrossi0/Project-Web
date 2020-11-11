@@ -113,6 +113,7 @@ nav ul li a{
 .content .content-left .input {
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 .content .content-left input {
@@ -125,16 +126,6 @@ nav ul li a{
     width: 200px;
     color: black;
     margin: 5px;
-}
-
-.input .left {
-    display: flex;
-    flex-direction: column;
-}
-
-.input .right {
-    display: flex;
-    flex-direction: column;
 }
 
 
