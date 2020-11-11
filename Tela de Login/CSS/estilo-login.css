@@ -100,6 +100,9 @@ nav ul li a{
 
 .content .content-left .txt{
     color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .content .content-left .txt h1 {
@@ -120,13 +123,13 @@ nav ul li a{
     height: 32px;
     text-align: center;
     transition: 0.5s;
-    width: 150px;
+    width: 200px;
     color: black;
     margin: 10px 0 10px 0;
 }
 
 .content .content-left input:focus {
-    width: 200px;
+    width: 250px;
 }
 
 .content .content-left .txt-2 {
@@ -158,8 +161,21 @@ nav ul li a{
     color: white;
 }
 
+.btn-submit button {
+    color: white;
+    background: red;
+    border-radius: 30px;
+    width: 200px;
+    height: 32px;
+    outline: none;
+    transition: 0.5s;
+    border: 0;
+    margin-top: 10px;
+}
+
 .btn-submit button:hover {
-    background: ;
+    background: rgb(129, 4, 4);
+    cursor: pointer;
 }
 
 
