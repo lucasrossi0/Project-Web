@@ -147,6 +147,21 @@ nav ul li a{
     text-decoration: underline;
 }
 
+.btn-submit button {
+    border-radius: 30px;
+    outline: none;
+    background: red;
+    height: 32px;
+    text-align: center;
+    transition: 0.5s;
+    width: 150px;
+    color: white;
+}
+
+.btn-submit button:hover {
+    background: ;
+}
+
 
 
 
