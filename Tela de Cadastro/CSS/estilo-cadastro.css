@@ -128,6 +128,19 @@ nav ul li a{
     margin: 5px;
 }
 
+.semDigito {
+    border-radius: 30px;
+    outline: none;
+    background: red;
+    border-color: black;
+    height: 32px;
+    text-align: center;
+    transition: 0.5s;
+    width: 200px;
+    color: white;
+    margin: 5px;
+}
+
 
 
 
