@@ -1,5 +1,142 @@
 * {
     font-family: 'Sora', sans-serif;
     margin: 0;
+    padding: 0;
 }
 
+body {
+    background: gray; 
+}
+
+
+
+
+
+
+.header row{
+    margin-top: 70px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    flex: auto;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav ul li a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.icons-header {
+    display: inline-block;
+}
+
+.icons-header .icones {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 5px 0 5px;
+}
+
+.icons-header .icones:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.small-container .title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: white;
+  }
+  
+  .title::after{
+    content: '';
+    background: #ff0000;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  h4{
+    color: #000000;
+    font-weight: normal;
+  }
+  
+  .col-4 p{
+    font-size: 12px;
+  }
+  
+  .rating .fa{
+    color: rgb(255, 0, 0);
+  }
+  
+  .col-4:hover{
+    transform: translateY(-5px);
+  }
+  
+  .small-container .btn-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 38, 38);
+    color:#fff;
+    padding: 12px 34px;
+    border-radius: 30px;
+    transition: 0.5s;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 70px;
+  }
+  
+  .small-container .btn-products:hover {
+    background: #ff00006e;
+    cursor: pointer;
+  }
+  
+  .small-container .for-btn-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
