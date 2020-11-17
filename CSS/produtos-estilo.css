@@ -78,65 +78,76 @@ nav ul li a{
 
 
 
+.row {
+  display: flex;
+  justify-content: center;
+}
 
 .small-container .title{
     text-align: center;
     margin: 0 auto 80px;
     position: relative;
     line-height: 60px;
-    color: white;
   }
   
-  .title::after{
-    content: '';
-    background: #ff0000;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  h4{
-    color: #000000;
-    font-weight: normal;
-  }
-  
-  .col-4 p{
-    font-size: 12px;
-  }
-  
-  .rating .fa{
-    color: rgb(255, 0, 0);
-  }
-  
-  .col-4:hover{
-    transform: translateY(-5px);
-  }
-  
-  .small-container .btn-products {
+.title::after{
+  content: '';
+  background: #ff0000;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4{
+  color: #000000;
+  font-weight: normal;
+}
+
+.col-4 p{
+  font-size: 12px;
+}
+
+.rating .fa{
+  color: rgb(255, 0, 0);
+}
+
+.col-4 {
+  margin: 10px 15px 10px 15px;
+}
+
+.col-4:hover{
+  transform: translateY(-5px);
+}
+
+.small-container .col-4 img {
+  height: 200px;
+  width: 200px;
+}
+
+@media (max-width: 860px) {
+
+  .row {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: rgb(255, 38, 38);
-    color:#fff;
-    padding: 12px 34px;
-    border-radius: 30px;
+    align-items: center;
+    flex-direction: column;
     transition: 0.5s;
-    outline: none;
-    font-size: 16px;
-    margin-bottom: 70px;
   }
-  
-  .small-container .btn-products:hover {
-    background: #ff00006e;
-    cursor: pointer;
-  }
-  
-  .small-container .for-btn-products {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+}
+
+
+.containerProducts {
+
+}
+
+.containerProducts h2 {
+  padding-top: 50px;
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+}
