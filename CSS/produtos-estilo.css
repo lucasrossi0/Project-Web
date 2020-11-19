@@ -149,3 +149,38 @@ h4{
   position: relative;
   line-height: 60px;
 }
+
+
+
+
+
+.footer {
+display: flex;
+align-items: center;
+justify-content: center;
+background: black;
+margin-top: 70px;
+height: 15vh;
+}
+
+.footer .icons {
+color: white;
+margin: 5px;
+font-size: 32px;
+}
+
+.footer .icons a:hover {
+cursor: pointer;
+color: red;
+}
+
+.footer .icons a{
+color: white;
+margin: 5px;
+font-size: 32px;
+}
+
+.footer .icons:hover {
+cursor: pointer;
+color: red;
+}
