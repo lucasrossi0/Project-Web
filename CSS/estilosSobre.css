@@ -1,0 +1,151 @@
+* {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+}
+
+body {
+    background: gray;
+}
+
+
+
+
+.header {
+    background: gray;
+    height: 30vh;
+}
+
+.header row{
+    margin-top: 70px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    flex: auto;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav ul li a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.icons-header {
+    display: inline-block;
+}
+
+.icons-header .icones {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 5px 0 5px;
+}
+
+.icons-header .icones:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: gray;
+    padding-bottom: 50px;
+}
+
+.content .txtSobre .img img{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.content .txtSobre .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .txtSobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+}
+
+.content .txtSobre p {
+    display: flex;
+    font-size: 18px;
+}
+
+
+
+
+
+
+.footer {
+display: flex;
+align-items: center;
+justify-content: center;
+background: black;
+height: 15vh;
+}
+
+.footer .icons {
+color: white;
+margin: 5px;
+font-size: 32px;
+}
+
+.footer .icons a:hover {
+cursor: pointer;
+color: red;
+}
+
+.footer .icons a{
+color: white;
+margin: 5px;
+font-size: 32px;
+}
+
+.footer .icons:hover {
+cursor: pointer;
+color: red;
+}
