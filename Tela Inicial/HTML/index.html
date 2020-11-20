@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shamo</title>
-  <link rel="stylesheet" href="../CSS/estilos.css">
+  <script type="text/javascript" src="../JAVASCRIPT/inicial.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
   <script
-      src="https://kit.fontawesome.com/bbde3d316c.js"
-      crossorigin="anonymous"></script>
+  src="https://kit.fontawesome.com/bbde3d316c.js"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/estilos.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
 <body>
@@ -171,9 +173,7 @@
 
   <div class="location">
 
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.8458367431426!2d-34.873056685479746!3d-7.143818872059825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace9756bb62047%3A0x7b496d72ac7b34fe!2sFavela%20do%20Rato%20Molhado!5e0!3m2!1spt-BR!2sbr!4v1604952624121!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
+    <div id="map"></div>
 
     <h3>
       Para entrar em contato com nossa empresa utilize o email ou nosso telefone: <br> suporteshamo@gmail.com <br> (83)99787474
