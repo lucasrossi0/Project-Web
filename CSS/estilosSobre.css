@@ -3,12 +3,16 @@
     margin: 0;
 }
 
+body {
+    background: gray;
+}
 
 
 
 
 .header {
     background: gray;
+    height: 30vh;
 }
 
 .header row{
@@ -80,12 +84,21 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    background: gray;
+    padding-bottom: 50px;
 }
 
-.content img {
+.content .txtSobre .img img{
     width: 500px;
-    height: 500px;
+    height: 300px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.content .txtSobre .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content .txtSobre {
@@ -95,4 +108,44 @@ nav ul li a{
     flex-direction: column;
     max-width: 500px;
     width: 100%;
+}
+
+.content .txtSobre p {
+    display: flex;
+    font-size: 18px;
+}
+
+
+
+
+
+
+.footer {
+display: flex;
+align-items: center;
+justify-content: center;
+background: black;
+height: 15vh;
+}
+
+.footer .icons {
+color: white;
+margin: 5px;
+font-size: 32px;
+}
+
+.footer .icons a:hover {
+cursor: pointer;
+color: red;
+}
+
+.footer .icons a{
+color: white;
+margin: 5px;
+font-size: 32px;
+}
+
+.footer .icons:hover {
+cursor: pointer;
+color: red;
 }
