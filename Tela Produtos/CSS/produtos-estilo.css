@@ -117,15 +117,38 @@ h4{
 
 .col-4 {
   margin: 10px 15px 10px 15px;
+  display: flex;
+  flex-direction: column  ;
+  justify-content: space-between;
 }
 
 .col-4:hover{
   transform: translateY(-5px);
+  
 }
 
 .small-container .col-4 img {
   height: 200px;
   width: 200px;
+}
+
+.col-4 .btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn .btn-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: red;
+  outline: none;
+  padding: 8px;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 @media (max-width: 860px) {
