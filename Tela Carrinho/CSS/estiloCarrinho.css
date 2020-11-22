@@ -173,7 +173,6 @@ nav ul li a{
 
 .card_pay {
     display: flex;
-    background: white;
     align-items: center;
     justify-content: center;
 }
@@ -182,19 +181,31 @@ nav ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin-right: 20px;
+    padding: 10px;
+    background: white;
+    width: 200px;
 }
 
 .card_pay p {
     font-size: 16px;
+    padding: 10px;
 }
 
 .card_pay p i {
     font-size: 22px;
 }
 
+@media (max-width: 1070px) {
+    .card_pay {
+        flex-direction: column;
+    }
+}
 
+@media (max-width: 400px) {
+    .card_img {
+        flex-direction: column;
+    }
+}
 
 
 
