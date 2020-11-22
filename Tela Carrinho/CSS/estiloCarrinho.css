@@ -103,7 +103,7 @@ nav ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 16px 0 16px;
+    padding: 0px 16px 0 16px;
     height: 186px;
 }
 
@@ -118,6 +118,10 @@ nav ul li a{
     display: flex;
 }
 
+.products .card .rigth .txtPrice .rating {
+    padding: 6px 0 6px 0;
+}
+
 .products .card .qntd {
     margin-left: 20px;
     display: flex;
@@ -130,14 +134,50 @@ nav ul li a{
     width: 40px;
 }
 
+.products .card .qntd .btnRemove {
+    background: red;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    padding: 6px;
+    transition: 0.5s;
+    margin-top: 8px;
+}
+
+.products .card .qntd .btnRemove:hover {
+    background: #b80000;
+    cursor: pointer;
+}
+
+.buy .btnBuy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.buy .btnBuy .bBuy {
+    background: red;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px;
+    outline: none;
+    transition: 0.5s;
+    margin-bottom: 60px;
+}
+
+.buy .btnBuy .bBuy:hover {
+    background: #b80000;
+    cursor: pointer;
+}
+
 .card_pay {
-    margin-top: 80px;
     display: flex;
     background: white;
-    padding: 8px;
     align-items: center;
     justify-content: center;
 }
+
 .card_pay .methods {
     display: flex;
     align-items: center;
