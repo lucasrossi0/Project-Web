@@ -1,79 +1,44 @@
+var dados = [];
 var banco = window.localStorage;
-var error = false; 
-var data = [];
+const pessoa = JSON.parse(banco.getItem('Pessoa'));
 
 $(document).ready(function () {
     
-    $("#bSalvar").click(function () {
+    $('#bSalvar').click(function () {
 
-        validacao("#tNome");
-        validacao("#tSobreNome");
-        validacao("#tCPF");
-        validacao("#tEmail");
-        validacao("#tConfirmaEmail");
-        var senha = validacao("#tSenha");
-        validacao("#tConfirmaSenha");
-        validacao("#tCEP");
-        validacao("#tEndereco");
-        validacao("#tNumero");
-        validacao("#tComplemento");
-        var userName = validacao("#tUsername");
-
-
-        validatePassword();
-        validateEmail();
-
-        if (error == true) {
-            window.alert("Dados invalidos");
+        var name = $('#tNome').val();
+        var surname = $('#tSobreNome').val();
+        var email = $('#tEmail').val();
+        var password = $('#tSenha').val();
+        var confirmP = $('#tConfirmaSenha').val();
+        
+        if (name == '' || surname == '' || email == '' || password == '' || confirmP == '') {
+            alert('Por favor, complete todos os campos corretamente')
         } else {
-            window.alert("Dados cadastrados com sucesso");
+            if (password == confirmP) {
+                var list = [];
+
+                list.push(name);
+                list.push(surname);
+                list.push(email);
+                list.push(password);
+                list.push(confirmP);
+
+                dados.push(list);
+
+                if (pessoa == null || pessoa.length == 0) {
+                    banco.setItem('Pessoa', JSON.stringify(dados));
+                } else {
+                    for (a = 0; a < pessoa.length; a++) {
+                        dados.push(pessoa[a]);
+                        banco.setItem('Pessoa', JSON.stringify(dados));
+                    }
+                }
+
+                window.location.href = '../../Tela de Login/HTML/login.html';
+            } else {
+                alert('Campo equivocados, não estão iguais')
+            }
         }
-    
-        data.push(senha);
-        data.push(userName);
-
-        console.log(data);
-
-        banco.setItem("data", JSON.stringify(data));
-
-        var dataBanco = JSON.parse(banco.getItem("data"));
     });
 });
-
-function validacao (idfield) {
-
-    var valor = $(idfield).val();
-
-    if (valor == "") {
-        idfield.addClass("semDigito");
-        error = true;
-    }else {
-        idfield.removeClass("semDigito");
-    };
-};
-
-function validatePassword () {
-    var senha = $("#tSenha").val();
-    var confirmaSenha = $("#tConfirmaSenha").val();
-
-    if (senha != confirmaSenha) {
-        $("#tConfirmaSenha").addClass("semDigito");
-        error = true;
-        window.alert("As senhas devem ser iguais?");
-    } else {
-        $("#tConfirmaSenha").removeClass("semDigito");
-    };
-};
-
-function validateEmail () {
-
-    var email = $("tEmail").val();
-    var confirmaEmail = $("tConfirmaEmail").val();
-
-    if (email != confirmaEmail) {
-        $("tConfirmaEmail").addClass("semDigito");
-        error = true;
-    } else {
-        $("tConfirmaEmail").removeClass("semDigito");
-    };
-};
