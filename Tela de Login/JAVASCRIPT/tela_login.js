@@ -1,15 +1,11 @@
 var dados = [];
 var banco = window.localStorage;
-
+var status = false;
 $(document).ready(function () {
-    
     $('#bEnter').click( function () {
-
         var email = $('#tEmail').val();
         var password = $('#tSenha').val();
-
         var pessoa = JSON.parse(localStorage.getItem('Pessoa'));
-        
         if (email == '' || password == '') {
             alert('Preencha todos os campos');
         } else {
@@ -17,10 +13,13 @@ $(document).ready(function () {
                 if (pessoa[a][1] == email && pessoa[a][2] == password) {
                     window.location.href = '../../Tela Inicial/index.html';
                 } else {
-                    alert('Dados não encontrados!');
+                    alert("Dados não encontrados!")
+                    status = true;
                 }
             }
         }
+        if (status == true) {
+            alert("Dados não encontrados!");
+        }
     });
-    
 });
