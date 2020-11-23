@@ -3,7 +3,7 @@ var mapa;
 $(document).ready(function () {
   initMap();
 
-  $(".btn-products").click( function () {
+  $("#tProducts").click( function () {
     window.location.href = "../Tela Produtos/HTML/telaProdutos.html";
   });
 });
