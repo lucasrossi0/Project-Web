@@ -3,8 +3,8 @@ var mapa;
 $(document).ready(function () {
   initMap();
 
-  $('#tProducts').click( function () {
-    window.location.href = "../Tela Produtos/HTML/telaProdutos";
+  $(".btn-products").click( function () {
+    window.location.href = "../Tela Produtos/HTML/telaProdutos.html";
   });
 });
 
