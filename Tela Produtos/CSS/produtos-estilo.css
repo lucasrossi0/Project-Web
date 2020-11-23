@@ -62,15 +62,20 @@ nav ul li a{
     display: inline-block;
 }
 
-.icons-header .icones {
-    display: inline-block;
-    font-size: 22px;
-    margin: 0 5px 0 5px;
+.icons-header .icones a{
+  text-decoration: none;
+  color: black;
 }
 
-.icons-header .icones:hover{
-    color: red;
-    cursor: pointer;
+.icons-header .icones {
+  display: inline-block;
+  font-size: 22px;
+  margin: 0 5px 0 5px;
+}
+
+.icons-header .icones a:hover{
+  color: red;
+  cursor: pointer;
 }
 
 
